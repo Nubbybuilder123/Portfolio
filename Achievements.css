@@ -1,0 +1,135 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+li {
+  float: left;
+}
+  
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Ensures consistent font */
+}
+
+.navbar {
+    background-color: #1c1c1c;
+    text-align: center; /* This centers the div containing the ul */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* This will center the items horizontally */
+}
+
+.navbar li {
+    margin: 0 10px; /* Adds horizontal spacing between items */
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center; /* Ensures text is centered within each link */
+    
+}
+
+.navbar a:hover {
+    background-color: #111111;
+}
+
+.page_title h1{
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+.academics{
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.Coding {
+    text-align: left;
+    margin-left: 30%;
+    font-size: 200%;
+}
+
+.academics p {
+    font-size: 150%;
+}
+
+.academics li{
+    text-align: left;
+    margin-left: 35%;
+}
+
+.CCA{
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.CCA h3{
+    text-align: left;
+    margin-left: 30%;
+    font-size: 200%;
+}
+
+.CCA p {
+    font-size: 150%;
+}
+
+.CCA li {
+    text-align: left;
+    margin-left: 35%;
+}
+
+.leadership{
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.leadership h3{
+    text-align: left;
+    margin-left: 30%;
+    font-size: 200%;
+}
+
+.leadership p {
+    font-size: 150%;
+}
+
+.leadership li{
+    text-align: left;
+    margin-left: 35%;
+}

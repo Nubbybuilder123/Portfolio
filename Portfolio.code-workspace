@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Test"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Cybersecurity"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio"
+	}
+}

@@ -1,0 +1,171 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+
+body {
+background-color: black;
+margin: 0;
+font-family: Arial, sans-serif; /* Ensures consistent font */
+width: 100%;
+height: 100%;
+color: white;
+}
+html{
+width: 100%;
+height: 100%;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+  text-align: center; /* This centers the div containing the ul */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* This will center the items horizontally */
+}
+
+.navbar li {
+  margin: 0 10px; /* Adds horizontal spacing between items */
+  font-size: 20px;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center; /* Ensures text is centered within each link */
+  
+}
+
+.navbar a:hover {
+  background-color: #111111;
+}
+
+
+
+.card-container {
+width: 70%;
+justify-content: center;
+margin-left: 15%;
+margin-right: 15%;
+height: 50%;
+}
+
+.card {
+display: flex;
+text-decoration: none;
+color: white;
+background-color: #1c1a1d;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s, box-shadow 0.2s;
+width: 100%;
+height:60%;
+margin-top: 3%;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-image{
+flex-shrink: 0;
+}
+.card-image img {
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.card-content {
+padding: 16px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex:1;
+}
+
+.card-content h2 {
+margin: 0;
+font-size: 24px;
+margin-bottom: 8px;
+}
+
+.card-content p {
+margin-top: 3%;
+color: white;
+}
+
+.intro h1{
+  text-align: center;
+  align-content: center;
+}
+
+.intro h2{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.soft h2{
+  text-align: center;
+
+}
+
+.code h2{
+  text-align: center;
+}
+.code p{
+  text-align: center;
+}
+
+.coding-container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping to ensure horizontal alignment */
+  color: white;
+}
+
+.coding-icons {
+  display: flex;
+  flex-direction: column; /* This arranges the image and text vertically */
+  align-items: center; /* Center align the content horizontally */
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+
+.coding-icons img {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  height: 100px; /* Adjust size as needed */
+  width: 100px;  /* Adjust size as needed */
+  margin-left: 10%;
+  margin-right: 10%;
+}
