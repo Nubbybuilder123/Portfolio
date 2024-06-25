@@ -1,49 +1,149 @@
-<head>
-    <link rel = "stylesheet" href="HMGICS.css">
+<!DOCTYPE html>
+<html lang="en">
 
-    </link>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="RDP.css">
+    <style>
+        /* Custom styles to hide/show carousel items */
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+        .image-gallery {
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+        .page_title {
+            text-align: center; /* Center align the title */
+            margin-bottom: 20px; /* Add margin at the bottom of the title */
+        }
+
+        .page_title h1 {
+            font-size: 250%; /* Example size, adjust as needed */
+            color: white; /* Example color */
+            padding: 10px; /* Padding around the title */
+            border-radius: 8px; /* Rounded corners for the title background */
+            display: inline-block; /* Ensure block level display for padding to work */
+        }
+        .heading1 h2 {
+            font-size: 175%;
+            color:white;
+            display: inline-block;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>RDP</title>
 </head>
+
 <body>
     <nav class="navbar">
-    
         <ul>
-            <li><a href= "index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="XP.html">Experiences</a></li>
             <li><a href="Achievements.html">Achievements</a></li>
             <li><a href="Skills.html">Skills</a></li>
         </ul>
     </nav>
-    <div class = "page_title">
+
+    <div class="page_title">
         <h1>Research and Development Programme (RDP) @ CRADLE Science Centre Singapore</h1>
     </div>
 
-    <div class = "image-gallery">
-        <img src="RDP.jpeg" alt="HMGICS"></img>
+    <div class="relative w-3/5 h-[70vh] bg-gray-800 rounded-lg shadow-lg p-4 mx-auto mt-5">
+        <!-- Carousel Items -->
+        <div class="carousel h-full">
+          <div class="carousel-item active">
+            <div class="h-full">
+              <img src="SS2.JPG" class="w-full h-full rounded-lg object-cover" alt="SS2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="SS3.JPG" class="w-full h-full rounded-lg object-cover" alt="SS3">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="SS4.JPG" class="w-full h-full rounded-lg object-cover" alt="SS4">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="SS5.JPG" class="w-full h-full rounded-lg object-cover" alt="SS5">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-l-lg"><</button>
+        <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-r-lg">></button>
     </div>
+    <!-- End of Image Carousel Section -->
 
-    <div class = "heading1">
+    <div class="heading1">
         <h2>My Experience</h2>
     </div>
-    <div class = "main-text">
-        <p>In June 2023, I was fortunate to have the opportunity to participate in an extremely unique programme, known at the Research and Development Programme (RDP) held by the CRADLE research department by Science Centre. This 2 week long, 9am - 5pm programme was a unique experience where students from Secondary three to Junior College level are mentored by professors, researchers and engineers to ideate and innovate unique solutions to solve real world problems, not just by coming up with a proposal, but a minimal viable product (MVP) a working prototype of our proposed solutions. My team and I, representing SST, were tasked to come up with a smart aquaponics system suitable for urban settings such as Singapore. </p>
+    <div class="main-text">
+        <p>In June 2023, I was fortunate to have the opportunity to participate in an extremely unique programme, known
+            as the Research and Development Programme (RDP) held by the CRADLE research department by Science Centre.
+            This 2-week-long, 9 am - 5 pm programme was a unique experience where students from Secondary three to Junior
+            College level are mentored by professors, researchers, and engineers to ideate and innovate unique solutions
+            to solve real-world problems, not just by coming up with a proposal, but a minimal viable product (MVP) a
+            working prototype of our proposed solutions. My team and I, representing SST, were tasked to come up with a
+            smart aquaponics system suitable for urban settings such as Singapore. </p>
     </div>
-    <div class = "main-text">
-        <p><br> Firstly, We learnt to operate heavy machinery such as the industrial laser cutter as well as 3D printers, while learning skills such as woodworking, souldering, wiring, all essential skills in order to create a smart product.</br></p>
+    <div class="main-text">
+        <p><br> Firstly, We learnt to operate heavy machinery such as the industrial laser cutter as well as 3D
+            printers, while learning skills such as woodworking, soldering, wiring, all essential skills in order to
+            create a smart product.</br></p>
     </div>
-    <div class = "main-text">
-        <p><br>Next, We had to ideate, we took inspiration from the vertical farm systems found in Singapore as well as the aquaponics farms that we see on the roofs of Carparks. We modelled our prototype digitally using a 3D modelling software. <br></p>
+    <div class="main-text">
+        <p><br>Next, We had to ideate, we took inspiration from the vertical farm systems found in Singapore as well as
+            the aquaponics farms that we see on the roofs of Carparks. We modeled our prototype digitally using a 3D
+            modeling software. <br></p>
     </div>
-    <div class = "main-text">
-        <p>Lastly, we went around the lab to aquire our components that were needed for the prototype, from motors, pipes, solar panels etc. We then built the frame of the aquaponics system, with the tubing poperly installed. Then, we had to wire the electrical systems to a breadboard and store them in a safe place, the electronics included water detectors, pumps, led lights as well as a connection to the solar panel. The idea was to have this as an independent system that can operate on its own, the solar panel would provide electrical energy to the system and the system would run on its own with a microcontroller and pre-programmed code, making this system versatile and modular. </p>
+    <div class="main-text">
+        <p>Lastly, we went around the lab to acquire our components that were needed for the prototype, from motors,
+            pipes, solar panels etc. We then built the frame of the aquaponics system, with the tubing properly
+            installed. Then, we had to wire the electrical systems to a breadboard and store them in a safe place, the
+            electronics included water detectors, pumps, LED lights as well as a connection to the solar panel. The idea
+            was to have this as an independent system that can operate on its own, the solar panel would provide
+            electrical energy to the system and the system would run on its own with a microcontroller and
+            pre-programmed code, making this system versatile and modular. </p>
     </div>
 
-    <div class = "heading1">
+    <div class="heading1">
         <h2>Reflection</h2>
     </div>
 
-    <div class = "main-text">
-        <p>In the end, the experience was really unique and I am grateful enough to have been given the opportunity to embark on this project. From this programme, I also had many things to reflect on, such as an improvement in my presentation skills, engineering skills, programming skills, networking skills, teamwork, leadership, ideation and coordination skills. All of which I hope to be able to bring forward and apply them with greater frequency in the future to sharpen my proficiency on these essential skills.</p>
+    <div class="main-text">
+        <p>In the end, the experience was really unique and I am grateful enough to have been given the opportunity to
+            embark on this project. From this programme, I also had many things to reflect on, such as an improvement in
+            my presentation skills, engineering skills, programming skills, networking skills, teamwork, leadership,
+            ideation and coordination skills. All of which I hope to be able to bring forward and apply them with
+            greater frequency in the future to sharpen my proficiency on these essential skills.</p>
     </div>
+
+    <script>
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        document.getElementById('next').addEventListener('click', () => {
+            carouselItems[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % carouselItems.length;
+            carouselItems[currentIndex].classList.add('active');
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            carouselItems[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+            carouselItems[currentIndex].classList.add('active');
+        });
+    </script>
+
 </body>
+
+</html>

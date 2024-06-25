@@ -1,52 +1,132 @@
-<head>
-    <link rel = "stylesheet" href="HMGICS.css">
+<!DOCTYPE html>
+<html lang="en">
 
-    </link>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="HMGICS.css">
+    <style>
+        /* Custom styles to hide/show carousel items */
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: block;
+        }
+        .image-gallery {
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+        .page_title {
+            text-align: center; /* Center align the title */
+            margin-bottom: 20px; /* Add margin at the bottom of the title */
+        }
+
+        .page_title h1 {
+            font-size: 250%; /* Example size, adjust as needed */
+            color: white; /* Example color */
+            padding: 10px; /* Padding around the title */
+            border-radius: 8px; /* Rounded corners for the title background */
+            display: inline-block; /* Ensure block level display for padding to work */
+        }
+        .heading1 h2 {
+            font-size: 175%;
+            color:white;
+            display: inline-block;
+        }
+    </style>
     <meta charset="UTF-8">
-    <title>HMGICS Work Attachment</title>
+    <title>Work Attachment @ HMGICS</title>
 </head>
+
 <body>
     <nav class="navbar">
-    
         <ul>
-            <li><a href= "index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="XP.html">Experiences</a></li>
             <li><a href="Achievements.html">Achievements</a></li>
             <li><a href="Skills.html">Skills</a></li>
         </ul>
     </nav>
-    <div class = "page_title">
+
+    <div class="page_title">
         <h1>Work Attachment @ HMGICS</h1>
     </div>
 
-    <div class = "image-gallery">
-        <img src="WhatsApp Image 2023-12-13 at 18.41.37 (1) (1).jpeg" alt="HMGICS"></img>
+    <div class="relative w-3/5 h-[70vh] bg-gray-800 rounded-lg shadow-lg p-4 mx-auto mt-5">
+        <!-- Carousel Items -->
+        <div class="carousel h-full">
+          <div class="carousel-item active">
+            <div class="h-full">
+              <img src="HMGICS1.jpeg" class="w-full h-full rounded-lg object-cover" alt="HMGICS1">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="HMGICS2.jpeg" class="w-full h-full rounded-lg object-cover" alt="HMGICS2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="HMGICS3.jpeg" class="w-full h-full rounded-lg object-cover" alt="HMGICS3">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="h-full">
+              <img src="HMGICS4.jpeg" class="w-full h-full rounded-lg object-cover" alt="HGMICS4">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-l-lg"><</button>
+        <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-r-lg">></button>
     </div>
+    <!-- End of Image Carousel Section -->
 
-    <div class = "heading1">
+    <div class="heading1">
         <h2>My Experience</h2>
     </div>
-    <div class = "main-text">
-        <p>In December 2023, I was one of a few fortunate individuals who were selected by SST to go to the newly established Hyundai 
-            Motor Group Innovation Centre Singapore (HMGICS) for a work attachment. The 3 day long programme was an insightful one where 
-            I got to learn about the history of the Hyundai Company, whilst also understanding more about their business model, touring 
-            the factory and R&D centres as well as how they operated as an organisation. As part of the work attachment, we were guided by 
-            our mentors and were tasked in coming up with a new way to heighten the Customer Experience (CX) of HMGICS. My team and I eventually 
-            came up with a solution to integrate up and coming technologies such as Virtual Reality as well as Robotics, something Hyundai 
-            specialises in, to keep children of the visitors entertained, allowing parents to have uninterrupted time to tour the factory and make 
-            decisions in purchasing a vehicle. Furthermore, we planned to enhance the customer tour experience with the introduction of robots as 
-            tour guides to provide a unique and futuristic experience whilst also reducing manpower demand on the tour segment, allowing Hyundai to 
-            focus their resources elsewhere. </p>
+    <div class="main-text">
+        <p>In December 2023, I was one of a few fortunate individuals who were selected by SST to go to the newly established Hyundai
+            Motor Group Innovation Centre Singapore (HMGICS) for a work attachment. The 3 day long programme was an insightful one where
+            I got to learn about the history of the Hyundai Company, whilst also understanding more about their business model, touring
+            the factory and R&D centres as well as how they operated as an organisation. As part of the work attachment, we were guided by
+            our mentors and were tasked in coming up with a new way to heighten the Customer Experience (CX) of HMGICS. My team and I eventually
+            came up with a solution to integrate up and coming technologies such as Virtual Reality as well as Robotics, something Hyundai
+            specialises in, to keep children of the visitors entertained, allowing parents to have uninterrupted time to tour the factory and make
+            decisions in purchasing a vehicle. Furthermore, we planned to enhance the customer tour experience with the introduction of robots as
+            tour guides to provide a unique and futuristic experience whilst also reducing manpower demand on the tour segment, allowing Hyundai to
+            focus their resources elsewhere.</p>
     </div>
 
-    <div class = "heading1">
+    <div class="heading1">
         <h2>Reflection</h2>
     </div>
 
-    <div class = "main-text">
+    <div class="main-text">
         <p>Through this experience, I have been very fortunate and grateful to my teachers and mentors for allowing me to experience such a unique interaction.
-             I have gained greater insight into things such as company recruitment requirements, industrial operations, importance of an integrated network of 
-             smart sensors in an industrial setting and most importantly, interaction and networking with professionals more in depth in the customer experience 
-             and human resource aspect in planning, considering and curating an unforgettable experience for customers. </p>
+            I have gained greater insight into things such as company recruitment requirements, industrial operations, importance of an integrated network of
+            smart sensors in an industrial setting and most importantly, interaction and networking with professionals more in depth in the customer experience
+            and human resource aspect in planning, considering and curating an unforgettable experience for customers.</p>
     </div>
+
+    <script>
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        document.getElementById('next').addEventListener('click', () => {
+            carouselItems[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % carouselItems.length;
+            carouselItems[currentIndex].classList.add('active');
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            carouselItems[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+            carouselItems[currentIndex].classList.add('active');
+        });
+    </script>
+
 </body>
+
+</html>

@@ -99,3 +99,8 @@ body {
     margin-left: 30%;
     margin-right: 30%;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
